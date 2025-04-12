@@ -1,5 +1,4 @@
-# control-inventario
-proyecto en python 
+Proyecto en python 
 # 📦 Sistema de Control de Inventario
 
 Este repositorio contiene un sistema de gestión de inventario con interfaz gráfica, desarrollado en Python utilizando `CustomTkinter`. El sistema está diseñado para administrar **clientes**, **proveedores** y **productos** desde un panel central o _dashboard_.
