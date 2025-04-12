@@ -1,8 +1,9 @@
 # main.py
 import tkinter as tk
 import customtkinter as ctk
-from administrador import AdministradorUsuarios
+
 from login import LoginApp
+from modules.administrador import AdministradorUsuarios
 
 if __name__ == "__main__":
     admin_usuarios = AdministradorUsuarios()  # Instancia del Administrador de Usuarios

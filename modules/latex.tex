@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=2.5cm}
+\title{Resumen de Comandos LaTeX}
+\author{Fernando}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Estructura Básica}
+\begin{verbatim}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+...
+\end{document}
+\end{verbatim}
+
+\section{Secciones y Organización}
+\begin{verbatim}
+\section{Título}
+\subsection{Subtítulo}
+\subsubsection{Subsubtítulo}
+\end{verbatim}
+
+\section{Formato de Texto}
+\begin{itemize}
+    \item \texttt{\textbackslash textbf\{negrita\}} → \textbf{negrita}
+    \item \texttt{\textbackslash textit\{cursiva\}} → \textit{cursiva}
+    \item \texttt{\textbackslash underline\{subrayado\}} → \underline{subrayado}
+\end{itemize}
+
+\section{Listas}
+\subsection*{Viñetas}
+\begin{verbatim}
+\begin{itemize}
+  \item Elemento
+\end{itemize}
+\end{verbatim}
+
+\subsection*{Numeradas}
+\begin{verbatim}
+\begin{enumerate}
+  \item Elemento
+\end{enumerate}
+\end{verbatim}
+
+\section{Matemáticas}
+Fórmula en línea: \( a^2 + b^2 = c^2 \)
+
+Fórmula en bloque:
+\[
+\int_0^1 x^2 dx = \frac{1}{3}
+\]
+
+\begin{itemize}
+    \item \texttt{\textbackslash frac\{a\}\{b\}} → \( \frac{a}{b} \)
+    \item \texttt{\textbackslash sqrt\{x\}} → \( \sqrt{x} \)
+    \item \texttt{\textbackslash sum\_\{i=1\}\^\{n\}} → \( \sum_{i=1}^{n} \)
+    \item \texttt{\textbackslash alpha, \textbackslash beta} → \( \alpha, \beta \)
+\end{itemize}
+
+\section{Tablas}
+\begin{verbatim}
+\begin{tabular}{|c|c|}
+\hline
+Col1 & Col2 \\
+\hline
+Dato1 & Dato2 \\
+\hline
+\end{tabular}
+\end{verbatim}
+
+\section{Imágenes}
+\begin{verbatim}
+\includegraphics[width=0.5\textwidth]{imagen.png}
+\end{verbatim}
+
+\section{Enlaces y Referencias}
+\begin{itemize}
+    \item \texttt{\textbackslash href\{url\}\{texto\}} → \href{https://www.latex-project.org}{Sitio LaTeX}
+    \item \texttt{\textbackslash label, \textbackslash ref, \textbackslash pageref}
+\end{itemize}
+
+\section{Código Fuente}
+\begin{verbatim}
+\begin{lstlisting}[language=Python]
+def hola():
+    print("Hola, mundo")
+\end{lstlisting}
+\end{verbatim}
+
+\section{Presentaciones (Beamer)}
+\begin{verbatim}
+\documentclass{beamer}
+\begin{document}
+\begin{frame}
+\frametitle{Título}
+Contenido
+\end{frame}
+\end{document}
+\end{verbatim}
+
+\section*{Fin del Resumen}
+Este documento es una guía rápida de LaTeX. ¡Sigue practicando!
+
+\end{document}
