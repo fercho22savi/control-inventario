@@ -52,5 +52,6 @@ Los módulos deben ser desarrollados y mantenidos en sus archivos correspondient
 
 ✍️ Autor
 Fernando saldaña
+
 Analista de Sistemas
 
